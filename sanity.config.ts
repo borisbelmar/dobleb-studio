@@ -5,7 +5,7 @@ import {schemaTypes} from './schemaTypes'
 
 export default defineConfig({
   name: 'default',
-  title: 'Sitio Web',
+  title: 'dobleB. Sitio Web',
 
   projectId: 'w3be79he',
   dataset: 'production',
