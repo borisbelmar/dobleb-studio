@@ -12,7 +12,6 @@ jobs:
     runs-on: ubuntu-latest
     env:
       SANITY_AUTH_TOKEN: ${{ secrets.SANITY_AUTH_TOKEN }}
-      HOST_NAME: dobleb.sanity.studio
     
     steps:
       - name: Checkout code
