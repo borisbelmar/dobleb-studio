@@ -54,6 +54,15 @@ export default defineType({
       type: 'array',
       title: 'Tags',
       of: [{type: 'string'}],
+      options: {
+        list: [
+          {title: 'Tutorial', value: 'tutorial'},
+          {title: 'News', value: 'news'},
+          {title: 'Guide', value: 'guide'},
+          {title: 'Opinion', value: 'opinion'},
+        ],
+        layout: 'tags',
+      },
     },
   ],
 })

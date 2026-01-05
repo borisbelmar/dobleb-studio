@@ -53,7 +53,35 @@ export default defineType({
       name: 'category',
       type: 'string',
       title: 'Category',
+      options: {
+        list: [
+          {title: 'Web Development', value: 'web'},
+          {title: 'Branding', value: 'branding'},
+          {title: 'Marketing', value: 'marketing'},
+          {title: 'UI/UX Design', value: 'uiux'},
+          {title: 'Product Design', value: 'product'},
+          {title: 'Other', value: 'other'},
+        ],
+      },
       validation: (rule) => rule.required(),
+    },
+    {
+      name: 'areas',
+      type: 'array',
+      title: 'Areas',
+      of: [{type: 'string'}],
+      options: {
+        list: [
+          {title: 'UX', value: 'ux'},
+          {title: 'Development', value: 'development'},
+          {title: 'Creativity', value: 'creativity'},
+          {title: 'Design', value: 'design'},
+          {title: 'Product Design', value: 'product-design'},
+          {title: 'Integrations', value: 'integrations'},
+          {title: 'CX', value: 'cx'},
+        ],
+        layout: 'tags',
+      },
     },
   ],
 })
